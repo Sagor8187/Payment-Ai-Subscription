@@ -1,5 +1,6 @@
 import React from "react";
 import { TiShoppingCart } from "react-icons/ti";
+import {  toast } from 'react-toastify';
 function Navbar({setactive,cart}) {
   return (
     <div className="">
@@ -36,7 +37,7 @@ function Navbar({setactive,cart}) {
   </div>
   <div className="navbar-end gap-5">
     <div className="relative ">
-      <a onClick={()=>setactive("cart")} className="text-xl"><TiShoppingCart /></a>
+      <a onClick={()=>{setactive("cart"),toast.success("Cart section")}} className="text-xl"><TiShoppingCart /></a>
       <span className={`absolute bottom-2 left-5 ${cart.length===0?"text-black font-semibold":"text-red-500 font-semibold"}`}>{cart.length}</span>
     </div>
     <a className="font-bold ">Login</a>

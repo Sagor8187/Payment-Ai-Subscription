@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { IoMdCheckmark } from "react-icons/io";
+ import { ToastContainer, toast } from 'react-toastify';
 export default function Cardview({ info,cart,setcart }) {
   const [seleted ,setselected] = useState(false)
   return (
@@ -46,7 +47,7 @@ export default function Cardview({ info,cart,setcart }) {
         </ul>
 
         {/* Button */}
-        <button disabled={seleted} onClick={()=>{setcart([...cart,info]),setselected(true)}} className="w-full py-2 text-white font-semibold rounded-lg bg-linear-to-r from-purple-500 to-pink-500 hover:opacity-90 transition">
+        <button disabled={seleted} onClick={()=>{setcart([...cart,info]),setselected(true),toast.success("Buy Successful")}} className="w-full py-2 text-white font-semibold rounded-lg bg-linear-to-r from-purple-500 to-pink-500 hover:opacity-90 transition">
          {seleted === true?"Seleted ":"Buy Now"}
         </button>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {  toast } from 'react-toastify';
 export default function Cart({cart,setcart}) {
     let remove = (id)=>{
       let updateitem=  cart.filter(items => items.id !== id)
@@ -34,7 +34,7 @@ export default function Cart({cart,setcart}) {
           </div>
 
           {/* Right side */}
-          <button onClick={()=> remove(item.id)} className="text-pink-500 font-medium hover:underline">
+          <button onClick={()=> {remove(item.id),toast.error("Remove product")}} className="text-pink-500 font-medium hover:underline">
             Remove
           </button>
         </div>
@@ -45,7 +45,7 @@ export default function Cart({cart,setcart}) {
         <p>${total}</p>
     </div>
     <div className='mx-5 py-5'>
-       <button onClick={()=>setcart([])} className="w-full p-3 rounded-full text-white text-xl bg-linear-to-r from-[#652df7] to-[#9116fa]  font-bold">Proceed to Checkout</button>
+       <button onClick={()=>{setcart([]),toast.success("Check out done")}} className="w-full p-3 rounded-full text-white text-xl bg-linear-to-r from-[#652df7] to-[#9116fa]  font-bold">Proceed to Checkout</button>
     </div>
   </div>
         }

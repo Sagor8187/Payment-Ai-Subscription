@@ -9,6 +9,7 @@ import Pricing from './Pricing/Pricing'
 import Cta from './Cta/Cta'
 import Footer from './Footer/Footer'
 
+import {  toast } from 'react-toastify';
 
 export default function App() {
   let [product,setproduct] = useState([])
@@ -34,8 +35,8 @@ const [cart,setcart]=useState([])
        <h1 className='font-bold text-2xl md:text-4xl'>Premium Digital Tools</h1>
       <p className='text-[#627382]'>Choose from our curated collection of premium digital products designedto boost your productivity and creativity</p>
       <div className='flex justify-center gap-5 '>
-        <button onClick={()=>setactive("product")} className={`${active==="product"?"bg-linear-to-r from-[#652df7] to-[#9116fa] p-2 rounded-full text-white font-bold":"bg-white text-[#25065D]"}`}>Products</button>
-        <button onClick={()=>setactive("cart")} className={`${active==="cart"?"bg-linear-to-r from-[#652df7] to-[#9116fa] p-2 px-4 rounded-full text-white font-bold":"bg-white text-[#25065D]"}`}>Cart ({cart.length})</button>
+        <button onClick={()=>{setactive("product"),toast.success("Product Section")}} className={`${active==="product"?"bg-linear-to-r from-[#652df7] to-[#9116fa] p-2 rounded-full text-white font-bold":"bg-white text-[#25065D]"}`}>Products</button>
+        <button onClick={()=>{setactive("cart"),toast.success("Cart Section")}} className={`${active==="cart"?"bg-linear-to-r from-[#652df7] to-[#9116fa] p-2 px-4 rounded-full text-white font-bold":"bg-white text-[#25065D]"}`}>Cart ({cart.length})</button>
       </div>
      </div>
     </div>
