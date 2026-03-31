@@ -23,7 +23,7 @@ function Navbar() {
         <li><a>Item 3</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl bg-linear-to-r from-[#652df7] to-[#9116fa] bg-clip-text text-transparent font-bold">DigiTool</a>
+    <a className="text-xl bg-linear-to-r from-[#652df7] to-[#9116fa] bg-clip-text text-transparent font-bold">DigiTool</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -40,7 +40,7 @@ function Navbar() {
       <span className="absolute bottom-2 left-4">1</span>
     </div>
     <a className="font-bold ">Login</a>
-    <a className="btn  hidden md:block  bg-linear-to-r from-[#652df7] to-[#9116fa] text-white rounded-full">Get Started</a>
+    <button className="btn  hidden md:block  bg-linear-to-r from-[#652df7] to-[#9116fa] text-white rounded-full">Get Started</button>
 
   </div>
 </div>
