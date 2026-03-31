@@ -1,6 +1,6 @@
 import React from "react";
 import { TiShoppingCart } from "react-icons/ti";
-function Navbar() {
+function Navbar({setactive,cart}) {
   return (
     <div className="">
       <div className="navbar bg-base-100 shadow-sm">
@@ -35,9 +35,9 @@ function Navbar() {
     </ul>
   </div>
   <div className="navbar-end gap-5">
-    <div className="relative">
-      <a className="text-xl"><TiShoppingCart /></a>
-      <span className="absolute bottom-2 left-4">1</span>
+    <div className="relative ">
+      <a onClick={()=>setactive("cart")} className="text-xl"><TiShoppingCart /></a>
+      <span className={`absolute bottom-2 left-5 ${cart.length===0?"text-black font-semibold":"text-red-500 font-semibold"}`}>{cart.length}</span>
     </div>
     <a className="font-bold ">Login</a>
     <button className="btn  hidden md:block  bg-linear-to-r from-[#652df7] to-[#9116fa] text-white rounded-full">Get Started</button>
