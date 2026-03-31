@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Pro Resume Builder",
+    "description": "Create professional resumes in minutes with AI-assisted templates.",
+    "price": 29.99,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "📄"
+  },
+  {
+    "id": 2,
+    "name": "Job Tracker Pro",
+    "description": "Track your job applications and get notifications for updates.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Unlimited job entries", "Email alerts", "Analytics dashboard"],
+    "icon": "📊"
+  },
+  {
+    "id": 3,
+    "name": "Interview Prep Kit",
+    "description": "Prepare for interviews with curated questions and mock tests.",
+    "price": 49.99,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Mock interviews", "Question bank", "Expert tips"],
+    "icon": "🎤"
+  },
+  {
+    "id": 4,
+    "name": "Premium Design Templates",
+    "description": "Access thousands of premium templates for presentations and resumes.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["5000+ templates", "Customizable", "Easy export options"],
+    "icon": "🎨"
+  },
+  {
+    "id": 5,
+    "name": "Career Coaching",
+    "description": "Personalized career coaching sessions with industry experts.",
+    "price": 199.99,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["1-on-1 session", "Career roadmap", "Follow-up support"],
+    "icon": "🧑‍🏫"
+  },
+  {
+    "id": 6,
+    "name": "Portfolio Builder",
+    "description": "Create beautiful online portfolios to showcase your work.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Drag & drop builder", "Custom domain", "Responsive design"],
+    "icon": "💼"
+  },
+  {
+    "id": 7,
+    "name": "Job Alerts Plus",
+    "description": "Get curated job alerts directly to your inbox every day.",
+    "price": 4.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Daily alerts", "Job matching algorithm", "Save jobs"],
+    "icon": "🔔"
+  },
+  {
+    "id": 8,
+    "name": "Skill Assessment Tests",
+    "description": "Take tests to evaluate and certify your skills for better job opportunities.",
+    "price": 34.99,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Skill tests", "Certification", "Detailed report"],
+    "icon": "📝"
+  }
+]

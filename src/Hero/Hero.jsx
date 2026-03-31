@@ -19,8 +19,8 @@ export default function Hero() {
             software—all in one place. Start creating faster today. Explore
             Products
           </p>
-          <div className="flex  gap-5">
-            <button className="p-2 font-bold px-4 text-center items-center  hidden md:block  bg-linear-to-r from-[#652df7] to-[#9116fa] text-white rounded-full">Explore Products</button>
+          <div className="flex flex-col md:flex-row  gap-5">
+            <button className="p-2 font-bold px-4 text-center items-center   bg-linear-to-r from-[#652df7] to-[#9116fa] text-white rounded-full">Explore Products</button>
             <button className="border-3 border-l-[#652df7] border-r-[#9116fa] border-b-[#9116fa] border-t-[#652df7] rounded-full flex items-center justify-center gap-1 p-2 "> <img src={play} alt="" />Watch Demo</button>
           </div>
         </aside>
