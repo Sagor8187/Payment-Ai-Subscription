@@ -2,7 +2,7 @@ import React from 'react';
 
 const Cta = () => {
   return (
-    <section className="w-full py-20 px-4 bg-gradient-to-r from-[#7C3AED] to-[#A855F7] flex flex-col items-center justify-center text-center text-white">
+    <section className="w-full py-20 px-4 bg-linear-to-r from-[#7C3AED] to-[#A855F7] flex flex-col items-center justify-center text-center text-white">
       {/* Heading */}
       <h2 className="text-3xl md:text-5xl font-bold mb-6 tracking-tight">
         Ready To Transform Your Workflow?

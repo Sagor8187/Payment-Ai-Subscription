@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { IoMdCheckmark } from "react-icons/io";
 export default function Cardview({ info,cart,setcart }) {
   const [seleted ,setselected] = useState(false)
   return (
@@ -35,13 +35,13 @@ export default function Cardview({ info,cart,setcart }) {
         {/* Features */}
         <ul className="mb-6 space-y-2">
           <li className="flex items-center text-gray-700">
-            <span className="text-green-500 mr-2">✔</span> {info.features[0]}
+            <span className="text-green-500 mr-2"><IoMdCheckmark /></span> {info.features[0]}
           </li>
           <li className="flex items-center text-gray-700">
-            <span className="text-green-500 mr-2">✔</span> {info.features[1]}
+            <span className="text-green-500 mr-2"><IoMdCheckmark /></span> {info.features[1]}
           </li>
           <li className="flex items-center text-gray-700">
-            <span className="text-green-500 mr-2">✔</span> {info.features[2]}
+            <span className="text-green-500 mr-2"><IoMdCheckmark /></span> {info.features[2]}
           </li>
         </ul>
 
