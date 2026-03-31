@@ -4,6 +4,10 @@ import Hero from './Hero/Hero'
 import Rating from './Rating/Rating'
 import Card from './Card/Card'
 import Cart from './Cart/Cart'
+import Steps from './Step/Step'
+import Pricing from './Pricing/Pricing'
+import Cta from './Cta/Cta'
+import Footer from './Footer/Footer'
 
 
 export default function App() {
@@ -37,7 +41,10 @@ const [cart,setcart]=useState([])
     </div>
     {active==="product"? <Card product={product} cart={cart} setcart={setcart} ></Card> :<Cart cart={cart} setcart={setcart}></Cart>}
       {/* <Card product={product}></Card> */}
-
+    <Steps></Steps>
+    <Pricing></Pricing>
+    <Cta></Cta>
+    <Footer></Footer>
     </div>
   )
 }
