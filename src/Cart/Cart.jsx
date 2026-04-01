@@ -5,8 +5,19 @@ export default function Cart({cart,setcart}) {
       let updateitem=  cart.filter(items => items.id !== id)
       setcart(updateitem)
     }
+    let increment = (id)=>{
+      let updatecart = cart.map(item=> item.id === id? { ...item, quantity: item.quantity + 1 }
+      : item)
+      setcart(updatecart)
+    }
+    let decrement =(id)=>{
+      let decrementcart = cart.map(item=> item.id  === id && item.quantity >1  ?
+        {...item,quantity:item.quantity - 1}:item
+      )
+      setcart(decrementcart)
+    }
 
-    let total = cart.reduce((acc,item)=> acc + item.price,0)
+    let total = cart.reduce((acc,item)=> acc + item.price * item.quantity,0)
     
   return (
     <div>
@@ -34,9 +45,14 @@ export default function Cart({cart,setcart}) {
           </div>
 
           {/* Right side */}
+         <div className='flex gap-2 md:gap-5'>
+           <button onClick={()=>{decrement(item.id)}}>-</button>
+           <p>{item.quantity}</p>
+          <button onClick={()=>increment(item.id)}>+</button>
           <button onClick={()=> {remove(item.id),toast.error("Remove product")}} className="text-pink-500 font-medium hover:underline">
             Remove
           </button>
+         </div>
         </div>
       ))}
     </div>
@@ -45,6 +61,7 @@ export default function Cart({cart,setcart}) {
         <p>${total}</p>
     </div>
     <div className='mx-5 py-5'>
+ 
        <button onClick={()=>{setcart([]),toast.success("Check out done")}} className="w-full p-3 rounded-full text-white text-xl bg-linear-to-r from-[#652df7] to-[#9116fa]  font-bold">Proceed to Checkout</button>
     </div>
   </div>

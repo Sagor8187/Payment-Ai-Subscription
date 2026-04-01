@@ -3,6 +3,22 @@ import { IoMdCheckmark } from "react-icons/io";
  import { ToastContainer, toast } from 'react-toastify';
 export default function Cardview({ info,cart,setcart }) {
   const [seleted ,setselected] = useState(false)
+
+  let handlecart = (product)=>{
+    let exist = cart.find(item=>item.id === product.id)
+
+    if(exist){
+      let updatecart = cart.map(item=>{
+        item.cart === product.id?{...item,quantity:item.quantity +1 }
+        :item
+      })
+      setcart(updatecart)
+    }else{
+      let newproduct = {...product,quantity:1}
+      setcart([...cart,newproduct])
+    }
+
+  }
   return (
     <div>
       <div className="max-w-xs bg-white rounded-xl shadow-lg p-6 relative font-sans">
@@ -47,7 +63,7 @@ export default function Cardview({ info,cart,setcart }) {
         </ul>
 
         {/* Button */}
-        <button disabled={seleted} onClick={()=>{setcart([...cart,info]),setselected(true),toast.success("Buy Successful")}} className="w-full py-2 text-white font-semibold rounded-lg bg-linear-to-r from-purple-500 to-pink-500 hover:opacity-90 transition">
+        <button disabled={seleted} onClick={()=>{handlecart(info),setselected(true),toast.success("Buy Successful")}} className="w-full py-2 text-white font-semibold rounded-lg bg-linear-to-r from-purple-500 to-pink-500 hover:opacity-90 transition">
          {seleted === true?"Seleted ":"Buy Now"}
         </button>
       </div>
