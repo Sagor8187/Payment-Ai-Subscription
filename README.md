@@ -1,16 +1,24 @@
-# React + Vite
+Project Name : Digital Tool Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Description:
 
-Currently, two official plugins are available:
+Digital Tool Platform is a modern web application where users can easily browse and purchase AI-powered digital tools through a simple subscription system. The platform is designed to provide a smooth and user-friendly experience, allowing users to explore various tools, add them to the cart, and manage their purchases efficiently.The interface is clean, responsive, and easy to navigate, making it suitable for all types of users.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1.Technologies Used
+.React.js
+.Tailwind CSS
+.Daisy UI
+.React Toastify
+.React Icons
+.Lucide Icons
 
-## React Compiler
+2.Key Features
+.Smart Cart System
+.Add products to cart
+.Increase & decrease product quantity
+.Remove items from cart
+.Total Price Calculation
+.View all selected items
+.Ready for checkout functionality
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Author :Sagor Roy
